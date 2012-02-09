@@ -1,6 +1,11 @@
 # My setup for my bash shell
 
-## Usage
-1. Clone this repository into a folder of choice, example  ~/scripts
-2. Modify your ~/.profile (Mac OS X) to point to the  ~/scripts/index.sh
+## Install
+1. cd ~
+2. git clone git@github.com:swallentin/Mac.OS.X.Bash.Settings.git scripts
+3. echo "source ~/scripts/index.sh" > .profile
 
+## Customization/options
+1. touch ~/scripts/$HOSTNAME
+2. mate ~/scripts/$HOSTNAME
+3. insert your settings specific to your host
