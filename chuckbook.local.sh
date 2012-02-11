@@ -1,4 +1,3 @@
-# local general environment settings
 unset MAILCHECK
 
 # local environment exports

@@ -9,7 +9,6 @@ export localhost="127.0.0.1"
 export mini="10.0.0.1"
 export home="~"
 
-alias ls="ls -laG"
 alias ll="ls -lahG"
 alias down="cd .."
 

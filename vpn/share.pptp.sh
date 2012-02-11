@@ -5,7 +5,8 @@
 
 # 2012-02-11 This script currently only supports OpenVPN connections. I've succesfully made it work @ Mauricos using PPTP/L2TP.
  
-natd -interface ppp0
+# natd -interface ppp0
+natd -same_ports -use_sockets -unregistered_only -dynamic -interface ppp0 -clamp_mss
 ipfw -f flush
 ipfw add divert natd ip from any to any via ppp0
 ipfw add pass all from any to any
