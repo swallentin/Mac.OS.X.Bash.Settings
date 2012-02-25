@@ -1,4 +1,4 @@
-unset MAILCHECK
+unset $CHECKMAIL
 
 # local environment exports
 
@@ -14,3 +14,6 @@ alias torrent="cd ~/Downloads/torrent"
 alias temp="cd ~/temp"
 alias development="cd ~/development"
 alias dropbox="cd ~/Dropbox"
+alias scripts="cd ~/scripts"
+
+git config --global core.editor "mate -w"

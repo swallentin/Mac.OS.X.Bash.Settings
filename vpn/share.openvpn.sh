@@ -10,3 +10,4 @@ ipfw -f flush
 ipfw add divert natd ip from any to any via tun0
 ipfw add pass all from any to any
 sysctl -w net.inet.ip.forwarding=1
+sysctl -w net.inet.ip.fw.enable=1
