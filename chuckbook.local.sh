@@ -22,7 +22,8 @@ alias gl="git pull"
 alias gp="git push"
 alias gst="git status"
 
-PS1='\[\033[01;31m\][ \h ] \[\033[01;32m\][ \u ]\033[01;36m\] [ \w ]\[\033[01;37m\] $ \[\033[00m\]'
+# \[\033[01;31m\][ \h ] \[\033[01;32m\][ \u ]\033[01;36m\]
+PS1='\033[01;36m\][ \w ]\[\033[01;31m\] $ \[\033[00m\]'
 
 git config --global core.editor "mate -w"
 
