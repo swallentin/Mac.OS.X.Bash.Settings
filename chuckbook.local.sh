@@ -23,8 +23,8 @@ alias gp="git push"
 alias gst="git status"
 
 # \[\033[01;31m\][ \h ] \[\033[01;32m\][ \u ]\033[01;36m\]
-PS1='\033[01;36m\][ \w ]\[\033[01;31m\] $ \[\033[00m\]'
+PS1='\033[01;36m\][ \W ]\[\033[01;31m\] $ \[\033[00m\]'
 
-git config --global core.editor "mate -w"
+git config --global core.editor "subl -w"
 
-unset $CHECKMAIL
+unset MAILCHECK
