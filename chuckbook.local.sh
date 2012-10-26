@@ -1,4 +1,7 @@
 # local environment exports
+. ~/.nvm/nvm.sh
+. ~/.git-completion.sh
+. ~/.npm-completion.sh
 
 export webroot="/Library/WebServer/Documents"
 export userwebroot="~/Sites/apache-userwebroot"
@@ -23,7 +26,9 @@ alias gp="git push"
 alias gst="git status"
 
 # \[\033[01;31m\][ \h ] \[\033[01;32m\][ \u ]\033[01;36m\]
-PS1='\033[01;36m\][ \W ]\[\033[01;31m\] $ \[\033[00m\]'
+# PS1='\# \!\033[01;36m\][ \W ]\[\033[01;31m\] $ \e[0m'
+export PS1='\w \$ '
+# PS2='\e[0m'
 
 git config --global core.editor "subl -w"
 
